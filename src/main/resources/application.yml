@@ -6,6 +6,10 @@ server:
 spring:
   application:
     name: minio-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 139.9.205.89:8848
 
 # 图片服务器 minio配置
 minio:
@@ -21,16 +25,3 @@ minio:
   thumbor:
     #缩略图宽度
     width: 50
-
-swagger:
-  basePackage: com.itcast.minio.controller
-  contactEmail: 2215751025@qq.com
-  contactName: zheng.zhang
-  contactUrl: https://github.com/EternityBQQ/CaEducation.git
-  desc: Minio服务测试
-  groupName: baseModule
-  license: 涨涨开发
-  licenseUrl: javascript:void(0)
-  termsOfServiceUrl: javascript:void(0)
-  title: 文件服务测试Swagger APIs
-  version: 0.0.1.SNAPSHOT
